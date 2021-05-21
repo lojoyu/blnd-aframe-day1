@@ -11,19 +11,20 @@
     
     <!--  Todo: Add Aframe Src Script    -->
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+
   </head>
   <body>
     <a-scene>
-      <a-entity rotation="0 40 0"
-                position="-3 0 3">
-      <a-entity camera
-            movement-controls
-            wasd-controls
-            look-controls
-            position="0 1.6 0"
-            >
+      <a-entity id="rig"
+          movement-controls
+          position="0 0 0"
+          rotation="0 40 0">
+        <a-entity camera
+                position="0 1.6 0"
+                look-controls>
       </a-entity>
-      </a-entity>
+    </a-entity>
 
       <a-sky color="red"></a-sky>s
       <a-light type="spot"
