@@ -14,7 +14,15 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 -3" 
+      <a-light type="directional"
+            color="white"
+            intensity="0.5"
+            cast-shadow="true"
+            position="-3 2 0"
+            target="#box">
+      </a-light>
+      <a-box id="box"
+             position="-1 0.5 -3" 
              rotation="0 45 0" 
              color="#4CC3D9" 
              shadow>
@@ -32,7 +40,6 @@
                   color="#FFC65D" 
                   shadow>
       </a-cone>
-<a-octahedron color="#FF926B" radius="5"></a-octahedron>
 
       <a-plane position="0 0 -4" 
                rotation="-90 0 0" 
