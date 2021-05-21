@@ -14,36 +14,11 @@
   </head>
   <body>
     <a-scene>
-      <a-entity camera 
+      <a-entity camera
             movement-controls
-            wasd-controls
-            loock-controls
+            wasd-controls="acceleration: 1"
+            look-controls
             position="0 1.6 0">
-        <a-cursor
-               position="0 0 -0.1"
-               fuse="true"
-               geometry="primitive:ring;radiusInner:0.001;radiusOuter:0.0015"
-               material="color:white"
-               opacity="0.8"
-               animation__click="property: scale; 
-                     startEvents: click; 
-                     easing: easeInCubic; 
-                     dur: 150; 
-                     from: 0.1 0.1 0.1; 
-                     to: 1 1 1"
-               animation__fusing="property: scale; 
-                     startEvents: fusing; 
-                     easing: easeInCubic; 
-                     dur: 1500; 
-                     from: 1 1 1; 
-                     to: 0.1 0.1 0.1"
-               animation__mouseleave="property: scale; 
-                     startEvents: mouseleave; 
-                     easing: easeInCubic; 
-                     dur: 500; 
-                     to: 1 1 1"
-             >
-             </a-cursor>
       </a-entity>
 
       <a-sky color="red"></a-sky>s
